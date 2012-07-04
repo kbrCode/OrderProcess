@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="OrderProcess" Class="OrderProcessDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MARCM001\SQLEXPRESS;Initial Catalog=OrderProcess;Integrated Security=True" SettingsObjectName="OrderProcess1._2.My.MySettings" SettingsPropertyName="OrderProcessConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblOrders" Member="Orders">
+    <Type Name="Order">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sNr" Member="Nr" Type="System.String" DbType="NVarChar(63)" CanBeNull="true" />
+      <Column Name="dOrderDate" Member="OrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iOrdererID" Member="OrdererID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iSupplierID" Member="SupplierID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sRemarks" Member="Remarks" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="bEProc" Member="EProc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="sEProcOrderNr" Member="EProcOrderNr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bFinalized" Member="Finalized" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblOrder_tblOrderItem" Member="OrderItems" ThisKey="ID" OtherKey="OrderID" Type="OrderItem" />
+      <Association Name="tblSupplier_tblOrder" Member="Supplier" ThisKey="SupplierID" OtherKey="ID" Type="Supplier" IsForeignKey="true" />
+      <Association Name="tblOrderer_tblOrder" Member="Orderer" ThisKey="OrdererID" OtherKey="ID" Type="Orderer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOrderItems" Member="OrderItems">
+    <Type Name="OrderItem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iOrderID" Member="OrderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sDescription" Member="Description" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="iItemClassID" Member="ItemClassID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iNrOrdered" Member="NrOrdered" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iNrDelivered" Member="NrDelivered" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dCompletionDate" Member="CompletionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iOrderableItemsID" Member="OrderableItemsID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bFromDragging" Member="FromDragging" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblOrderItem_tblItem" Member="Items" ThisKey="ID" OtherKey="OrderItemID" Type="Item" />
+      <Association Name="tblOrderItem_tblConfirmedItem" Member="ConfirmedItems" ThisKey="ID" OtherKey="OrderItemID" Type="ConfirmedItem" />
+      <Association Name="tblOrder_tblOrderItem" Member="Order" ThisKey="OrderID" OtherKey="ID" Type="Order" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tblItemClass_tblOrderItem" Member="ItemClass" ThisKey="ItemClassID" OtherKey="ID" Type="ItemClass" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tblOrderableItem_tblOrderItem" Member="OrderableItem" ThisKey="OrderableItemsID" OtherKey="ID" Type="OrderableItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblItems" Member="Items">
+    <Type Name="Item">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iOrderItemID" Member="OrderItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sItemID" Member="ItemID" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="dDelivery" Member="Delivery" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="cPrice" Member="Price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="sDeliverer" Member="Deliverer" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="sRecipient" Member="Recipient" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="sAssigner" Member="Assigner" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="iAccountingUnitID" Member="AccountingUnitID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dAccounting" Member="Accounting" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sAimsID" Member="AimsID" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="iConfirmedItemID" Member="ConfirmedItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblOrderItem_tblItem" Member="OrderItem" ThisKey="OrderItemID" OtherKey="ID" Type="OrderItem" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tblAccountingUnit_tblItem" Member="AccountingUnit" ThisKey="AccountingUnitID" OtherKey="ID" Type="AccountingUnit" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="tblConfirmedItem_tblItem" Member="ConfirmedItem" ThisKey="ConfirmedItemID" OtherKey="ID" Type="ConfirmedItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSuppliers" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sShortID" Member="ShortID" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="sDescription" Member="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="sAddress" Member="Address" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="sMailAddress" Member="MailAddress" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="sMainCatKeywords" Member="MainCatKeywords" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="iMainCatID" Member="MainCatID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iElseCatID" Member="ElseCatID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sOptionKeywords" Member="OptionKeywords" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="sCsvOrder" Member="CsvOrder" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Association Name="tblSupplier_tblOrder" Member="Orders" ThisKey="ID" OtherKey="SupplierID" Type="Order" />
+      <Association Name="tblSupplier_tblOrderableItem" Member="OrderableItems" ThisKey="ID" OtherKey="SupplierID" Type="OrderableItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOrderers" Member="Orderers">
+    <Type Name="Orderer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sName" Member="Name" Type="System.String" DbType="NVarChar(63) NOT NULL" CanBeNull="false" />
+      <Column Name="sEMailAddress" Member="EMailAddress" Type="System.String" DbType="NVarChar(63) NOT NULL" CanBeNull="false" />
+      <Association Name="tblOrderer_tblOrder" Member="Orders" ThisKey="ID" OtherKey="OrdererID" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblItemClass" Member="ItemClasses">
+    <Type Name="ItemClass">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sShortID" Member="ShortID" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="sDescription" Member="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="tblItemClass_tblOrderItem" Member="OrderItems" ThisKey="ID" OtherKey="ItemClassID" Type="OrderItem" />
+      <Association Name="tblItemClass_tblOrderableItem" Member="OrderableItems" ThisKey="ID" OtherKey="ItemClassID" Type="OrderableItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAccountingUnits" Member="AccountingUnits">
+    <Type Name="AccountingUnit">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sShortID" Member="ShortID" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="iCostCenter" Member="CostCenter" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="sITManager" Member="ITManager" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="sBesitzer" Member="Besitzer" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="tblAccountingUnit_tblItem" Member="Items" ThisKey="ID" OtherKey="AccountingUnitID" Type="Item" />
+      <Association Name="tblAccountingUnit_tblConfirmedItem" Member="ConfirmedItems" ThisKey="ID" OtherKey="AccountingUnitID" Type="ConfirmedItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblConfirmedItems" Member="ConfirmedItems">
+    <Type Name="ConfirmedItem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iOrderableItemsID" Member="OrderableItemsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iQuantityOrdered" Member="QuantityOrdered" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sOrderer" Member="Orderer" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sRecipientName" Member="RecipientName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="sCostCenterResponsible" Member="CostCenterResponsible" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sItManager" Member="ItManager" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="iAccountingUnitID" Member="AccountingUnitID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sNotesURL" Member="NotesURL" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="dDateConfirmed" Member="DateConfirmed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iOrderItemID" Member="OrderItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dDateOrdered" Member="DateOrdered" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iQuantityAssigned" Member="QuantityAssigned" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dDateAssigned" Member="DateAssigned" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblConfirmedItem_tblItem" Member="Items" ThisKey="ID" OtherKey="ConfirmedItemID" Type="Item" />
+      <Association Name="tblAccountingUnit_tblConfirmedItem" Member="AccountingUnit" ThisKey="AccountingUnitID" OtherKey="ID" Type="AccountingUnit" IsForeignKey="true" />
+      <Association Name="tblOrderItem_tblConfirmedItem" Member="OrderItem" ThisKey="OrderItemID" OtherKey="ID" Type="OrderItem" IsForeignKey="true" />
+      <Association Name="tblOrderableItem_tblConfirmedItem" Member="OrderableItem" ThisKey="OrderableItemsID" OtherKey="ID" Type="OrderableItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOrderableItemOptions" Member="OrderableItemOptions">
+    <Type Name="OrderableItemOption">
+      <Column Name="iOptionID" Member="OptionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iItemID" Member="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblOrderableItem_tblOrderableItemOption" Member="tblOrderableItem" ThisKey="OptionID" OtherKey="ID" Type="OrderableItem" IsForeignKey="true" />
+      <Association Name="tblOrderableItem_tblOrderableItemOption1" Member="OrderableItem" ThisKey="ItemID" OtherKey="ID" Type="OrderableItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOrderableItems" Member="OrderableItems">
+    <Type Name="OrderableItem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iOrder" Member="Order" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bItemActive" Member="ItemActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="iReplacedByID" Member="ReplacedByID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iItemClassID" Member="ItemClassID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iSupplierID" Member="SupplierID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sDeviceCategory" Member="DeviceCategory" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sSupplierNo" Member="SupplierNo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="cSupplierPrice" Member="SupplierPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="sManufacturer" Member="Manufacturer" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sManufacturerModel" Member="ManufacturerModel" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sManufacturerDetails" Member="ManufacturerDetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sManufacturerNo" Member="ManufacturerNo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="bItemVisibleToUser" Member="ItemVisibleToUser" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="sUserfriendlyName" Member="UserfriendlyName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="cUserfriendlyPrice" Member="UserfriendlyPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="dEOL" Member="EOL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sImage" Member="Image" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="sComments" Member="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sItemAvailInOrg" Member="ItemAvailInOrg" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="iAimsStdSystemsID" Member="AimsStdSystemsID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblOrderableItem_tblOrderItem" Member="OrderItems" ThisKey="ID" OtherKey="OrderableItemsID" Type="OrderItem" />
+      <Association Name="tblOrderableItem_tblConfirmedItem" Member="ConfirmedItems" ThisKey="ID" OtherKey="OrderableItemsID" Type="ConfirmedItem" />
+      <Association Name="tblOrderableItem_tblOrderableItemOption" Member="tblOrderableItemOptions" ThisKey="ID" OtherKey="OptionID" Type="OrderableItemOption" />
+      <Association Name="tblOrderableItem_tblOrderableItemOption1" Member="OrderableItemOptions" ThisKey="ID" OtherKey="ItemID" Type="OrderableItemOption" />
+      <Association Name="tblItemClass_tblOrderableItem" Member="ItemClass" ThisKey="ItemClassID" OtherKey="ID" Type="ItemClass" IsForeignKey="true" />
+      <Association Name="tblSupplier_tblOrderableItem" Member="Supplier" ThisKey="SupplierID" OtherKey="ID" Type="Supplier" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

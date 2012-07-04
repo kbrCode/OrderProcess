@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="inventarAIMS" Class="AIMSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=infw0302\p_inf;Initial Catalog=inventarAIMS;Integrated Security=True" SettingsObjectName="OrderProcess1_1.My.MySettings" SettingsPropertyName="inventarAIMSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LastCHNr" Member="LastCHNrs">
+    <Type Name="LastCHNr">
+      <Column Name="LastCHNr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Geraet_Benutzer" Member="Geraet_Benutzers">
+    <Type Name="Geraet_Benutzer">
+      <Column Name="CH_Nr" Type="System.Int32" DbType="Int" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="PersNr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zubehoer" Member="Zubehoers">
+    <Type Name="Zubehoer">
+      <Column Name="Inv_Nr" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Geraet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Typ_Nr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Serie_Nr" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Lieferant" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hersteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kauf_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Kaufpreis" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Garantiezeit" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Garantietyp" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Best_Nr" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CH_Nr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kategorie" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Besitzer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BemerkungAllgemein" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Umsteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lagerplatz" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MaxNummer" Member="MaxNummers">
+    <Type Name="MaxNummer">
+      <Column Name="NeuNummer" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LAN_Printer" Member="LANPrinters">
+    <Type Name="LANPrinter">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Inv_Nr" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="PrinterName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Ort" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Hersteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Typ" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Serie_Nr" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Best_Nr" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Lieferant" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kauf_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Besitzer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RAM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NW_Interface" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NW_Port" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SAP_Adr" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="NT_Foreignport" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Printserver" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Verantwortlich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dpi" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Farbe" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Duplex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Optionen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Umsteller" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Status_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Std_Systems" Member="StdSystems">
+    <Type Name="StdSystem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Geraet" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Typ" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="Kategorie" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Typ_Nr" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Hersteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Garantiezeit" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Garantietyp" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CPU_Typ" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CPU_Frequenz" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Memory" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="HD_Disk" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Graphikkarte" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Soundkarte" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Netzkarte" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Betriebssystem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Resolution" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Status_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Umsteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="adminwkst" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="assettag" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dpi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="farbe" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="optionen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="duplex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Besitzer" Member="Besitzers">
+    <Type Name="Besitzer">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Bezeichnung" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Kommentar" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email_ITManager" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="VisumFinanz" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Abschreibungsdauer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email_Finanz" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Anlagebuchhaltung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BenachrichtigungAnlBuchh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Email_AnlBuchh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kategorie" Member="Kategories">
+    <Type Name="Kategorie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bezeichnung" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Typ" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="AnlageBuchhaltung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LANDaten" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MobilData" Member="MobilDatas">
+    <Type Name="MobilData">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TelefonNummer" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="KurzNummer" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Einsatzzweck" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MobilAbo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kaufdatum" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Preis" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="RechnungSwisscom" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="PUK" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Sicherheitscode" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Bemerkungen" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="OriginalEditor" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="LastEditor" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="LastChange" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Januar" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Februar" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Maerz" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="April" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Mai" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Juni" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Juli" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="August" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="September" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Oktober" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="November" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Dezember" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="MobilData_Geraet" Member="Geraets" ThisKey="ID" OtherKey="MobilDataID" Type="Geraet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Benutzer" Member="Benutzers">
+    <Type Name="Benutzer">
+      <Column Name="PersNr" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Vorname" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Firma" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Buero" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Abteilung" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="Kostenstelle" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="Shortname" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PersArea" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Geraete_Daten" Member="Geraets">
+    <Type Name="Geraet">
+      <Column Name="CH_Nr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Best_Nr" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Geraet" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Typ_Nr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Serie_Nr" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="Hersteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lieferant" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Besitzer" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Kauf_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Garantiezeit" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Garantietyp" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CPU_Typ" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CPU_Frequenz" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Memory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HD_Disk" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Graphikkarte" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Soundkarte" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Netzkarte" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Betriebssystem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MAC_Adresse" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="HostName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IP_Adresse" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Subnet_Maske" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Kategorie" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobilDataID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Umsteller" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Umstelldatum" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUser" Type="System.String" DbType="NVarChar(192)" CanBeNull="true" />
+      <Column Name="BemerkungAllgemein" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="AdminWkst" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AnmAdminWkst" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AnlBuchnr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lagerplatz" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Assettag" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="MobilData_Geraet" Member="MobilData" ThisKey="MobilDataID" OtherKey="ID" Type="MobilData" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

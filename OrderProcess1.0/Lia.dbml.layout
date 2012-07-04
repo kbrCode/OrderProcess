@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Lia">
+  <DataContextMoniker Name="/LiaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1917766f-7e21-41fd-b6a6-23ec99333545" absoluteBounds="1.625, 1.25, 2, 2.24658447265625">
+      <DataClassMoniker Name="/LiaDataContext/tblConfirmedItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72f7fe60-776b-46eb-bfff-c883fc9a709d" absoluteBounds="1.6400000000000001, 1.71, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

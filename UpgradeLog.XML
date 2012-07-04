@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="OrderProcess">
+</Property><Property Name="Solution File" Value="D:\offlineuserdata\zehndema\H\Visual Studio 2010\Projects\OrderProcess\OrderProcess.sln">
+</Property><Property Name="Date" Value="Freitag, 21. Mai 2010">
+</Property><Property Name="Time" Value="14:03">
+</Property></Properties><Event ErrorLevel="0" Project="OrderProcess1.0" Source="OrderProcess1.0\OrderProcess1.0.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OrderProcess1.0" Source="OrderProcess1.0\OrderProcess1.0.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OrderProcess1.1" Source="OrderProcess1.1\OrderProcess1.1.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OrderProcess1.1" Source="OrderProcess1.1\OrderProcess1.1.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OrderProcess1.2" Source="OrderProcess1.2\OrderProcess1.2.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OrderProcess1.2" Source="OrderProcess1.2\OrderProcess1.2.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="OrderProcess.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="OrderProcess.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OrderProcess1.0" Source="OrderProcess1.0\OrderProcess1.0.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="OrderProcess1.1" Source="OrderProcess1.1\OrderProcess1.1.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="OrderProcess1.2" Source="OrderProcess1.2\OrderProcess1.2.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

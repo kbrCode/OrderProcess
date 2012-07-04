@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OrderProcess1.1
+</name>
+</assembly>
+<members>
+<member name="T:OrderProcess1_1.OrderProcessDataSet.tblAccountingUnitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblConfirmedItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemClassDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemOptionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrdersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblSuppliersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwOrderableItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwTestMZDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.USP_CheckStatisticsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblAccountingUnitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblConfirmedItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemClassRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemOptionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrdersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblSuppliersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwOrderableItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwTestMZRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.USP_CheckStatisticsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblAccountingUnitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblConfirmedItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemClassRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemOptionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderableItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrderItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblOrdersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.tblSuppliersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwOrderableItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.vwTestMZRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet.USP_CheckStatisticsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblAccountingUnitsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblConfirmedItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblItemClassTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblOrderableItemOptionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblOrderableItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblOrderersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblOrderItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblOrdersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.tblSuppliersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.vwOrderableItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.vwTestMZTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.USP_CheckStatisticsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(OrderProcess1_1.OrderProcessDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(OrderProcess1_1.OrderProcessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(OrderProcess1_1.OrderProcessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.UpdateAll(OrderProcess1_1.OrderProcessDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OrderProcess1_1.OrderProcessDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:OrderProcess1_1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:OrderProcess1_1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:OrderProcess1_1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AboSpezialdiensteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ADDomainsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BenutzerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BesitzerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.EinsatzzweckDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.FirmenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_BenutzerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_SWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraete_DatenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraetedaten_HistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KategorieDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KeyboardsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KomponentenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LagerplaetzeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LAN_PrinterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Lanprinter_HistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LastCHNrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MobilDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.NTUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.OpSystemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ouGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printer_QueuesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printerqueues_HistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SellDisposeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.StatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Std_SystemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SW_KatalogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.UnitySharesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Zubehoer_HistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Geraet_StatKorrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Zubehoer_StatKorrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.GeraeteRepDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Gerät_TypDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.HardwareDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.InventardateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_INFDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_MANDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._LAN_PrinterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LANPrinterRepDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ListhostsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_BildschirmeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_InventarDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MaxNummerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PackagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PeterKusterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SoftwareDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.User_GeraeteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.vwMANComputerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerEntsorgtDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerRepDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.USP_CheckStatisticsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AboSpezialdiensteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ADDomainsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BenutzerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BesitzerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.EinsatzzweckRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.FirmenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_BenutzerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_SWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraete_DatenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraetedaten_HistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KategorieRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KeyboardsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KomponentenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LagerplaetzeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LAN_PrinterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Lanprinter_HistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LastCHNrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MobilDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.NTUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.OpSystemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ouGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printer_QueuesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printerqueues_HistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SellDisposeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.StatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Std_SystemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SW_KatalogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.UnitySharesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Zubehoer_HistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Geraet_StatKorrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Zubehoer_StatKorrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.GeraeteRepRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Gerät_TypRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.HardwareRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.InventardateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_INFRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_MANRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._LAN_PrinterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LANPrinterRepRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ListhostsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_BildschirmeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_InventarRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MaxNummerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PackagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PeterKusterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SoftwareRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.User_GeraeteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.vwMANComputerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerEntsorgtRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerRepRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.USP_CheckStatisticsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AboSpezialdiensteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ADDomainsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BenutzerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BesitzerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.BufferTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.EinsatzzweckRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.FirmenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_BenutzerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraet_SWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraete_DatenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Geraetedaten_HistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KategorieRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KeyboardsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.KomponentenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LagerplaetzeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LAN_PrinterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Lanprinter_HistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LastCHNrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MobilDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.NTUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.OpSystemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ouGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printer_QueuesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Printerqueues_HistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SellDisposeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.StatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Std_SystemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SW_KatalogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.UnitySharesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Zubehoer_HistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.AbnahmeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Geraet_StatKorrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.CSC_Zubehoer_StatKorrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.GeraeteRepRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Gerät_TypRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.HardwareRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.InventardateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_INFRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.Kostenstelle_MANRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._LAN_PrinterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.LANPrinterRepRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ListhostsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_BildschirmeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet._MAN_InventarRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.MaxNummerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PackagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.PeterKusterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ReparaturRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.SoftwareRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.User_GeraeteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.vwMANComputerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerEntsorgtRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.ZubehoerRepRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet.USP_CheckStatisticsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.AbnahmenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.AboSpezialdiensteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ADDomainsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.BenutzerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.BesitzerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.BufferTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.BufferTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.EinsatzzweckTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.FirmenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Geraet_BenutzerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Geraet_SWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Geraete_DatenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Geraetedaten_HistoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.KategorieTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.KeyboardsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.KomponentenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.LagerplaetzeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.LAN_PrinterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Lanprinter_HistoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.LastCHNrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.MobilDataTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.NTUsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.OpSystemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ouGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Printer_QueuesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Printerqueues_HistoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ReparaturenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.SellDisposeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.StatusTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Std_SystemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.SW_KatalogTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.UnitySharesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ZubehoerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Zubehoer_HistoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.AbnahmeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.CSC_Geraet_StatKorrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.CSC_Zubehoer_StatKorrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.GeraeteRepTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Gerät_TypTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.HardwareTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.InventardateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Kostenstelle_INFTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.Kostenstelle_MANTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.LAN_PrinterTableAdapter1">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.LANPrinterRepTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ListhostsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.MAN_BildschirmeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.MAN_InventarTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.MaxNummerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.PackagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.PeterKusterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ReparaturTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.SoftwareTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.User_GeraeteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.vwMANComputerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ZubehoerEntsorgtTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.ZubehoerRepTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.USP_CheckStatisticsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.QueriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(OrderProcess1_1.InventarAIMSDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(OrderProcess1_1.InventarAIMSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(OrderProcess1_1.InventarAIMSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.UpdateAll(OrderProcess1_1.InventarAIMSDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OrderProcess1_1.InventarAIMSDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
