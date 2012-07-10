@@ -631,7 +631,7 @@ Public Class frmAvailableItems
         ' Determine if the clicked column is already the column that is 
         ' being sorted.
         keepSelection()
-        setupColumnsSort(e.Column, True)
+        setupColumnsSort(e.Column, False)
         ' Perform the sort with these new sort options.
         If loadingListFinished = True Then
             Me.lvMain.Sort()
