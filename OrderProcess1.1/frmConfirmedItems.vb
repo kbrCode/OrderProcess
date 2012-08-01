@@ -260,6 +260,10 @@ Handles searchBox.TextChanged
                             drgit.Recipient = objOrdItem.RecipientName
                             drgit.Assigner = Identity.Name
                             drgit.AccountingUnit = objOrdItem.AccountingUnit
+                            If Not drgit.ConfirmedItem Is Nothing Then
+                                drgit.ConfirmedItem.QuantityAssigned -= 1
+                                drgit.ConfirmedItem.DateAssigned = Nothing
+                            End If
                             drgit.ConfirmedItem = objOrdItem
                             drgit.Accounting = Now()
                             QuantityMissing = QuantityMissing - 1

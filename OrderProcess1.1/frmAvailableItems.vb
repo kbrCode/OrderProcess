@@ -497,9 +497,7 @@ Public Class frmAvailableItems
 
             If (drgit.ConfirmedItemID <> 0) Then
                 objOrdItem.QuantityAssigned -= 1
-                objOrdItem.QuantityOrdered -= 1
                 drgit.ConfirmedItem = Nothing
-                objOrdItem.DateOrdered = Nothing
                 objOrdItem.DateAssigned = Nothing
             End If
             Return True

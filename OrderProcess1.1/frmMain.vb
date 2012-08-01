@@ -28,23 +28,23 @@ Public Class frmMain
 
    Private Sub frmMain_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
       isloading = True
-        Identity = WindowsIdentity.GetCurrent
-        Dim Principal As New WindowsPrincipal(Identity)
-        If Not Principal.IsInRole("INF\LR_INF_ORDERPROCESS") Then
-            MessageBox.Show("You are not authorized to use this software." & vbCrLf & "If you think you recieved this message by mistake, please contact the CSC (Tel. +41 41 445 5555)", "Not in Group LR_INF_ORDERPROCESS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-            If Not DBCheckThread Is Nothing Then
-                If DBCheckThread.IsAlive Then
-                    DBCheckThread.Abort()
-                End If
-            End If
-            Me.Close()
-        End If
+        'Identity = WindowsIdentity.GetCurrent
+        'Dim Principal As New WindowsPrincipal(Identity)
+        'If Not Principal.IsInRole("INF\LR_INF_ORDERPROCESS") Then
+        '    MessageBox.Show("You are not authorized to use this software." & vbCrLf & "If you think you recieved this message by mistake, please contact the CSC (Tel. +41 41 445 5555)", "Not in Group LR_INF_ORDERPROCESS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        '    If Not DBCheckThread Is Nothing Then
+        '        If DBCheckThread.IsAlive Then
+        '            DBCheckThread.Abort()
+        '        End If
+        '    End If
+        '    Me.Close()
+        'End If
 
-        'dbOrderProcess = New OrderProcess(My.Settings.OrderProcessConnectionString1)
-        'dbAIMS = New AIMSDataContext(My.Settings.InventarAIMSConnectionString1)
+        dbOrderProcess = New OrderProcess(My.Settings.OrderProcessConnectionString1)
+        dbAIMS = New AIMSDataContext(My.Settings.InventarAIMSConnectionString1)
 
-        dbOrderProcess = New OrderProcess(My.Settings.OrderProcessConnectionString)
-        dbAIMS = New AIMSDataContext(My.Settings.inventarAIMSConnectionString)
+        'dbOrderProcess = New OrderProcess(My.Settings.OrderProcessConnectionString)
+        'dbAIMS = New AIMSDataContext(My.Settings.inventarAIMSConnectionString)
 
       ssMainLabel.Text = My.Settings.OrderProcessConnectionString
       lstOrderableItems = dbOrderProcess.OrderableItems.ToList
